@@ -1,5 +1,11 @@
 FROM python:3-alpine
 
+ARG MAINTAINER="<author>"
+ARG VERSION="0.0.0-dev.0-build.0"
+
+LABEL maintainer="${MAINTAINER}" \
+      version="${VERSION}"
+
 LABEL MAINTAINER='<author>'
 LABEL VERSION='0.0.0-dev.0-build.0'
 
